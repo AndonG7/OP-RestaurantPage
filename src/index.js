@@ -1,12 +1,10 @@
 console.log("hello world");
-import { homeLoad } from "./scripts/homeLoad";
-import  header  from "./scripts/homeTab/header";
-import nav from "./scripts/navBar";
-import { stickyNavi } from "./scripts/stickyNav";
+import { homeLoad } from "./scripts/homePageLoad";
+import { addNavBar } from "./scripts/navBar";
 
 const content = document.getElementById('content');
+content.classList.add('content');
 
-
+addNavBar(content);
 homeLoad(content);
-stickyNavi(nav, header);
 

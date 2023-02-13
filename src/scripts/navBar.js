@@ -1,36 +1,61 @@
 const nav = document.createElement('nav');
-            const logo = document.createElement('div');
-            const ul = document.createElement('ul');
-                const li1 = document.createElement('li');
-                const li2 = document.createElement('li');
-                const li3 = document.createElement('li');
-                const li4 = document.createElement('li');
+        const logo = document.createElement('div');
+        const menu = document.createElement('div');
+            const menuHome = document.createElement('a');
+            const menuMenu = document.createElement('a');
+            const menuAboutUs = document.createElement('a');
+            const menuContact = document.createElement('a');
 
-export default nav;
-
-export function addNavBar () {
+export function addNavBar (content) {
     //Add classes
-    logo.classList.add('logo');
-    ul.classList.add('links');
+    nav.classList.add('navBar');
+        logo.classList.add('logo');
+        menu.classList.add('menu');
 
     //Inner HTML
-    logo.textContent = "RAMAZOTTI";
-    li1.textContent = "Home";
-    li2.textContent = "Menu";
-    li3.textContent = "About Us";
-    li4.textContent = "Contact";
+    logo.innerHTML = "RAMAZOTTI";
+
+    menuHome.innerHTML = "Home";
+    menuMenu.innerHTML = "Menu";
+    menuAboutUs.innerHTML = "About Us";
+    menuContact.innerHTML = "Contact";
 
     //Appending 
-    ul.appendChild(li1);
-    ul.appendChild(li2);
-    ul.appendChild(li3);
-    ul.appendChild(li4);
+    menu.appendChild(menuHome);
+    menu.appendChild(menuMenu);
+    menu.appendChild(menuContact);
+    menu.appendChild(menuAboutUs);
 
     nav.appendChild(logo);
-    nav.appendChild(ul);
+    nav.appendChild(menu);
 
-    //Add active class
-    li1.classList.add('navActive');
-
-    return nav;
+    content.appendChild(nav);
 }
+
+//Animated navigation on scroll
+
+const [red, green, blue, alpha] = [255, 255, 255, 0];
+
+window.addEventListener('scroll', () => {
+    let y = 1 + (window.scrollY || window.pageYOffset) / 150;
+    y = y < 1 ? 1 : y; // ensure y is always >= 1 (due to Safari's elastic scroll)
+    y = y-1;
+    const [r, g, b, a] = [red, green, blue, alpha+(y*1.5)];
+    nav.style.backgroundColor = `rgba(${r}, ${g}, ${b}, ${a})`;
+    if (y > 0.5) {
+        nav.style.color = `rgb(0, 0, 0)`;
+        nav.style.gap = '40vw';
+        nav.style.padding = '10px 0';
+        logo.style.fontSize = '1.5rem';
+        menu.style.fontSize = '1.2rem';
+    } else {
+        nav.style.color = `rgb(255, 255, 255)`;
+        nav.style.gap = '30vw';
+        nav.style.padding = '20px 0'
+        logo.style.fontSize = '2rem';
+        menu.style.fontSize = '1.6rem';
+    }
+    if (y === 1) {
+        nav.style.backgroundColor = `rgba(${r}, ${g}, ${b}, 0)`;
+    }
+  })
