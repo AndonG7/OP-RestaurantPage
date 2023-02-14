@@ -1,29 +1,48 @@
+import { load } from "../index.js";
+
 const nav = document.createElement('nav');
         const logo = document.createElement('div');
         const menu = document.createElement('div');
             const menuHome = document.createElement('a');
             const menuMenu = document.createElement('a');
+                const dropdown = document.createElement('div');
+                    const starters = document.createElement('a');
+                    const main = document.createElement('a');
+                    const deserts = document.createElement('a');
             const menuAboutUs = document.createElement('a');
-            const menuContact = document.createElement('a');
 
 export function addNavBar (content) {
     //Add classes
     nav.classList.add('navBar');
         logo.classList.add('logo');
         menu.classList.add('menu');
+            menuMenu.classList.add('menuMenu');
+            menuHome.classList.add('menuHome');
+            menuAboutUs.classList.add('menuAboutUs');
+            dropdown.classList.add('dropdown');
+                starters.classList.add('navStarters');
+                main.classList.add('navMain');
+                deserts.classList.add('navDeserts');
 
     //Inner HTML
     logo.innerHTML = "RAMAZOTTI";
 
     menuHome.innerHTML = "Home";
     menuMenu.innerHTML = "Menu";
+        starters.innerHTML  = "Starters";
+        main.innerHTML  = "Main";
+        deserts.innerHTML  = "Deserts";
     menuAboutUs.innerHTML = "About Us";
-    menuContact.innerHTML = "Contact";
 
     //Appending 
+    dropdown.appendChild(starters);
+    dropdown.appendChild(main);
+    dropdown.appendChild(deserts);
+
+    menuMenu.appendChild(dropdown);
+
     menu.appendChild(menuHome);
     menu.appendChild(menuMenu);
-    menu.appendChild(menuContact);
     menu.appendChild(menuAboutUs);
 
     nav.appendChild(logo);
@@ -58,4 +77,30 @@ window.addEventListener('scroll', () => {
     if (y === 1) {
         nav.style.backgroundColor = `rgba(${r}, ${g}, ${b}, 0)`;
     }
-  })
+  });
+
+//Linking Pages
+menuHome.addEventListener('click', () => {
+    load("home");
+    console.log("click");
+});
+
+menuAboutUs.addEventListener('click', () => {
+    load("aboutus");
+    console.log("click");
+});
+
+starters.addEventListener('click', () => {
+    load("starters");
+    console.log("click");
+});
+
+main.addEventListener('click', () => {
+    load("main");
+    console.log("click");
+});
+
+deserts.addEventListener('click', () => {
+    load("deserts");
+    console.log("click");
+});

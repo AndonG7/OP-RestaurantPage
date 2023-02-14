@@ -1,3 +1,5 @@
+import { checkVisibility } from "../viewportVisibility";
+
 const header = document.createElement('header');
         const banner = document.createElement('div');
             const bigLogo = document.createElement('div');
@@ -27,7 +29,14 @@ export function addHeader () {
     banner.appendChild(bigLogo);
     header.appendChild(banner);
     header.appendChild(divider);
-    
+
+    //Animating
+    setTimeout(function(){
+        bigLogo.style.opacity = "1";
+    }, 1000);
+    setTimeout(function(){
+        innerText.style.opacity = "1";
+    }, 2000);
 
     return header;
 }

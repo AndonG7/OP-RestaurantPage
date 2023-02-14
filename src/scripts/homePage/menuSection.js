@@ -1,4 +1,5 @@
 import { checkVisibility } from "../viewportVisibility";
+import { load } from "../../index.js";
 
 const menuSection = document.createElement('div');
     const menuTitle = document.createElement('div');
@@ -27,11 +28,11 @@ export function addMenuSection (content) {
     `;
     menuMain.innerHTML = `
     <p2>Main Course</p2>
-    <img class="soup" src="../../images/pizza.png">
+    <img class="pizza" src="../../images/pizza.png">
     `;
     menuDesert.innerHTML = `
     <p2>Deserts</p2>
-    <img class="soup" src="../../images/soup.png">
+    <img class="cake" src="../../images/cake.png">
     `;
 
     //Appending 
@@ -46,9 +47,32 @@ export function addMenuSection (content) {
         if(checkVisibility(menuTitle)) {
             menuTitle.style.opacity = "1";
         }
+        if(checkVisibility(menuOptions)) {
+            menuStarter.style.opacity = "1";
+            setTimeout(function(){
+                menuMain.style.opacity = "1";
+            }, 1000);
+            setTimeout(function(){
+                menuDesert.style.opacity = "1";
+            }, 2000);
+        }
     });
 
+    //Linking Pages
+    menuStarter.addEventListener('click', function(){
+        load("starters");
+        console.log("click");
+    });
 
+    menuMain.addEventListener('click', function(){
+        load("main");
+        console.log("click");
+    });
+
+    menuDesert.addEventListener('click', function(){
+        load("deserts");
+        console.log("click");
+    });
 
     return menuSection;
 }
