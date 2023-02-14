@@ -175,7 +175,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
+    gap: 5rem;
 }
 
 .menuOption {
@@ -184,7 +184,7 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    gap: 2rem;
+    gap: 1.5rem;
     font-family: 'Babylonica', cursive;
     font-size: 4rem;
 }
@@ -192,6 +192,21 @@ header {
 .starter, .main, .desert {
     transition: all 1s ease-in;
     opacity: 0;
+    min-width: 350px;
+    min-height: 250px;
+    box-shadow: 1px 2px 16px -3px rgba(0,0,0,0);
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.starter:hover, .main:hover, .desert:hover {
+    box-shadow: 1px 2px 16px -3px rgba(0,0,0,0.75);
+    transition: box-shadow 0.3s ease-in;
+}
+
+.starter:active, .main:active, .desert:active {
+    box-shadow: 1px 2px 16px 0px rgba(0,0,0,1);
+    transition: box-shadow 0.1s ease-in;
 }
 
 
@@ -229,24 +244,44 @@ header {
     fill: #FFFFFF;
 }
 
-/* Starters Page CSS */
+/* Common CSS amongst pages */
 
-.startersMainSection {
+.startersMainSection, .mainMainSection, .desertsMainSection, .aboutUsMainSection {
     min-height: 500px;
     background-color: black;
     padding: 50px;
     padding-top: 100px;
 }
 
-.startersPage {
+.startersPage, .mainPage, .desertsPage, .aboutUsPage {
     background-color: white;
     min-height: 300px;
     color: black;
+    box-shadow: 0px 1px 25px 0px rgba(255,255,255,0.75);
+    border-radius: 5px;
 }
 
-.startersTitle {
+.startersTitle, .mainTitle, .desertsTitle, .aboutUsTitle {
     text-align: center;
     padding: 20px 0;
     font-family: 'Babylonica', cursive;
     font-size: 5rem;
+}
+
+/* About Us Page CSS */
+.aboutUsPage {
+    padding: 50px;
+}
+
+.aboutUsPage h1 {
+    font-family: 'Babylonica', cursive;
+    text-align: center;
+    font-size: 5rem;
+    padding-bottom: 50px;
+}
+
+.aboutUsPage p {
+    font-family: 'Roboto', serif;
+    font-size: 1.5rem;
+    text-align: justify;
 }

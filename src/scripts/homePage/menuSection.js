@@ -46,8 +46,6 @@ export function addMenuSection (content) {
     window.addEventListener('scroll', function() {
         if(checkVisibility(menuTitle)) {
             menuTitle.style.opacity = "1";
-        }
-        if(checkVisibility(menuOptions)) {
             menuStarter.style.opacity = "1";
             setTimeout(function(){
                 menuMain.style.opacity = "1";

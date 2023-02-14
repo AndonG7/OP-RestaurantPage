@@ -37,12 +37,14 @@ import { homeLoad } from "./scripts/homePageLoad";
 import { startersLoad } from "./scripts/startersPageLoad";
 import { mainLoad } from "./scripts/mainPageLoad";
 import { desertsLoad } from "./scripts/desertsPageLoad";
+import { aboutUsLoad } from "./scripts/aboutUsPageLoad";
 import { addNavBar } from "./scripts/navBar";
 
 const content = document.getElementById('content');
 content.classList.add('content');
 let activePage = "home";
 
+content.innerHTML = "";
 addNavBar(content);
 load(activePage);
 

@@ -11,7 +11,7 @@ export function addMainMainSection() {
     mainGrid.classList.add('mainGrid');
 
     //Inner HTML
-    mainTitle.innerHTML = "main";
+    mainTitle.innerHTML = "Main Course";
 
     //Appending
     mainPage.appendChild(mainTitle);

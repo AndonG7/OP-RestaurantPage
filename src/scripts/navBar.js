@@ -86,7 +86,7 @@ menuHome.addEventListener('click', () => {
 });
 
 menuAboutUs.addEventListener('click', () => {
-    load("aboutus");
+    load("aboutUs");
     console.log("click");
 });
 

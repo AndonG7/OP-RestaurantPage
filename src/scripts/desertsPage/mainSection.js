@@ -11,7 +11,7 @@ export function addDesertsMainSection() {
     desertsGrid.classList.add('desertsGrid');
 
     //Inner HTML
-    desertsTitle.innerHTML = "deserts";
+    desertsTitle.innerHTML = "Deserts";
 
     //Appending
     desertsPage.appendChild(desertsTitle);
