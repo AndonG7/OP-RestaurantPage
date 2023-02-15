@@ -254,11 +254,13 @@ header {
 }
 
 .startersPage, .mainPage, .desertsPage, .aboutUsPage {
-    background-color: white;
+    background: rgb(255,255,255);
+background: linear-gradient(195deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 30%, rgba(210,210,210,1) 70%, rgba(255,255,255,1) 110%);
     min-height: 300px;
     color: black;
     box-shadow: 0px 1px 25px 0px rgba(255,255,255,0.75);
     border-radius: 5px;
+    padding: 50px 100px;
 }
 
 .startersTitle, .mainTitle, .desertsTitle, .aboutUsTitle {
@@ -266,6 +268,64 @@ header {
     padding: 20px 0;
     font-family: 'Babylonica', cursive;
     font-size: 5rem;
+}
+
+.startersGrid, .mainGrid, .desertsGrid {
+    display: grid;
+    grid-template-columns: 3fr 6fr auto;
+    row-gap: 20px;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
+.startersGuides {
+    display: grid;
+    grid-template-columns: 3fr 1fr auto;
+    padding-bottom: 20px;
+}
+
+.dots {
+    border-bottom: dotted 2px black;
+}
+
+.menu-img{
+    position: relative;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.menu-img:hover > img{
+    filter: brightness(1) grayscale(0); 
+}
+
+.menu-img:hover {
+    color: transparent;
+}
+
+.menu-img img{
+    height: 100px;
+    border-radius: 15px;
+    filter: brightness(0.9) grayscale(0.5); 
+    transition: all 0.3s ease;
+}
+
+.menu-img h3{
+    position: absolute;
+    z-index: 555;
+    bottom: 5px;
+    left: 10px;
+    text-shadow: 1px 1px 0px #000000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.menu-price {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: -10px;
 }
 
 /* About Us Page CSS */
