@@ -23,70 +23,70 @@ export function addDesertsMainSection() {
     desertsGrid.innerHTML = `
         <div class="menu-img">
             <h3>Apple Pie</h3>
-            <img src="../../images/deserts/applePie.png">
+            <img src="../../src/images/deserts/applePie.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">15</div>
         
         <div class="menu-img">
             <h3>Banoffee Pie</h3>
-            <img src="../../images/deserts/banoffeePie.png">
+            <img src="../../src/images/deserts/banoffeePie.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">15</div>
         
         <div class="menu-img">
             <h3>Cannoli</h3>
-            <img src="../../images/deserts/cannoli.png">
+            <img src="../../src/images/deserts/cannoli.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">20</div>
         
         <div class="menu-img">
             <h3>Cheese Cake</h3>
-            <img src="../../images/deserts/cheeseCake.png">
+            <img src="../../src/images/deserts/cheeseCake.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">15</div>
         
         <div class="menu-img">
             <h3>Chocolate Cake</h3>
-            <img src="../../images/deserts/chocoCake.png">
+            <img src="../../src/images/deserts/chocoCake.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">20</div>
         
         <div class="menu-img">
             <h3>Chocolate Mousse</h3>
-            <img src="../../images/deserts/chocoMousse.png">
+            <img src="../../src/images/deserts/chocoMousse.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">15</div>
         
         <div class="menu-img">
             <h3>Fruit Tart</h3>
-            <img src="../../images/deserts/fruitTart.png">
+            <img src="../../src/images/deserts/fruitTart.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">12</div>
         
         <div class="menu-img">
             <h3>Gelato Icecream</h3>
-            <img src="../../images/deserts/gelatoIcecream.png">
+            <img src="../../src/images/deserts/gelatoIcecream.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">15</div>
         
         <div class="menu-img">
             <h3>Panna Cotta</h3>
-            <img src="../../images/deserts/pannaCotta.png">
+            <img src="../../src/images/deserts/pannaCotta.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">22</div>
         
         <div class="menu-img">
             <h3>Tiramisu</h3>
-            <img src="../../images/deserts/tiramisu.png">
+            <img src="../../src/images/deserts/tiramisu.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">20</div>

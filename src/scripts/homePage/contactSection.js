@@ -9,7 +9,7 @@ export function addContact () {
         <h2>Reach Us</h2>
         <div class="contact-info">
             <div class="phone">
-                <img src="../../images/call.svg">
+                <img src="../../src/images/call.svg">
                 <span>043 609 909</span>
             </div>
             <h3>Find Us</h3>

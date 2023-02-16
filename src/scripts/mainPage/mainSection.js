@@ -23,56 +23,56 @@ export function addMainMainSection() {
     mainGrid.innerHTML = `
         <div class="menu-img">
             <h3>Pizza Capricciosa</h3>
-            <img src="../../images/main/capricciosaPizza.png">
+            <img src="../../src/images/main/capricciosaPizza.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">30</div>
         
         <div class="menu-img">
             <h3>Pasta Carbonara</h3>
-            <img src="../../images/main/carbonara.png">
+            <img src="../../src/images/main/carbonara.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">25</div>
         
         <div class="menu-img">
             <h3>Pizza Carbonara</h3>
-            <img src="../../images/main/carbonaraPizza.png">
+            <img src="../../src/images/main/carbonaraPizza.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">30</div>
         
         <div class="menu-img">
             <h3>Chicago Style Pizza</h3>
-            <img src="../../images/main/chicagoPizza.png">
+            <img src="../../src/images/main/chicagoPizza.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">35</div>
         
         <div class="menu-img">
             <h3>Feta Pasta</h3>
-            <img src="../../images/main/fetaPasta.png">
+            <img src="../../src/images/main/fetaPasta.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">25</div>
         
         <div class="menu-img">
             <h3>Hawaiian Style Pizza</h3>
-            <img src="../../images/main/hawaiiPizza.png">
+            <img src="../../src/images/main/hawaiiPizza.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">30</div>
         
         <div class="menu-img">
             <h3>Pizza Margherita</h3>
-            <img src="../../images/main/margheritaPizza.png">
+            <img src="../../src/images/main/margheritaPizza.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">30</div>
         
         <div class="menu-img">
             <h3>New York Style Pizza</h3>
-            <img src="../../images/main/newyorkPizza.png">
+            <img src="../../src/images/main/newyorkPizza.png">
         </div>
         <div class="dots"></div>
         <div class="menu-price">30</div>

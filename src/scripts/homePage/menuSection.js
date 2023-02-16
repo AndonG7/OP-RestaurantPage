@@ -24,15 +24,15 @@ export function addMenuSection (content) {
     menuTitle.innerHTML = "MENU";
     menuStarter.innerHTML = `
         <p2>Starters</p2>
-        <img class="soup" src="../../images/soup.png">
+        <img class="soup" src="../../src/images/soup.png">
     `;
     menuMain.innerHTML = `
     <p2>Main Course</p2>
-    <img class="pizza" src="../../images/pizza.png">
+    <img class="pizza" src="../../src/images/pizza.png">
     `;
     menuDesert.innerHTML = `
     <p2>Deserts</p2>
-    <img class="cake" src="../../images/cake.png">
+    <img class="cake" src="../../src/images/cake.png">
     `;
 
     //Appending 
