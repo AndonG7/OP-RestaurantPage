@@ -25,7 +25,7 @@ export function addNavBar (content) {
                 deserts.classList.add('navDeserts');
 
     //Inner HTML
-    logo.innerHTML = "RAMAZOTTI";
+    logo.innerHTML = "RAMAZZOTI";
 
     menuHome.innerHTML = "Home";
     menuMenu.innerHTML = "Menu";
