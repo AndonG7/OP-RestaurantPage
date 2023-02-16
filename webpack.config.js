@@ -10,8 +10,18 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.png$/,
-        type: 'asset/resource'
+        test: /\.html$/,
+        use: ["html-loader"]
+      },
+      {
+        test: /\.(svg|png|jpg|gif|jpeg)$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]",
+            outputPath: "imgs"
+          }
+        }
       }
     ],
   },
